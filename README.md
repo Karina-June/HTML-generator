@@ -20,6 +20,10 @@ To install inquirer
 ```bash
 node i inquirer@8.2.4.
 ```
+To install jest
+```bash
+npm install --save-dev jest
+```
 Application will be invoked using
 ```bash
 node index.js
