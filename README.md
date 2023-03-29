@@ -20,7 +20,10 @@ To install inquirer
 ```bash
 node i inquirer@8.2.4.
 ```
-
+Application will be invoked using
+```bash
+node index.js
+````
 ## Preview
 
 ## Questions 

@@ -3,33 +3,10 @@ const Employee = require("../lib/Employee");
 describe('Employee', () => {
     describe('Initialization', () => {
         it("should create an object", () => {
-            const obj = new Employee();
+            const obj = new Employee('Leela', 1,'Leela@email.com');
+            const expectedObj = { name: 'Leela', id: 1, email: 'Leela@email.com' }
 
-            expect(obj).toEqual('object');
-        });
-    });
-    describe('name', () => {
-        it("should create a name", () => {
-            const name = "Leela";
-            const obj = new Employee(name)
-
-            expect(obj.name).toEqual(name);
-        });
-    });
-    describe('id', () => {
-        it("should create an id", () => {
-            const id = 5;
-            const obj = new Employee("Leela", id);
-
-            expect(obj.id).toEqual(id);
-        });
-    });
-    describe('email', () => {
-        it("should create an email", () => {
-            const email = "Leela@email.com";
-            const obj = new Employee("Leela", 5, email);
-
-            expect(obj.email).toEqual(email);
+            expect(obj).toEqual(expectedObj);
         });
     });
     describe('getName', () => {
@@ -42,7 +19,7 @@ describe('Employee', () => {
     });
     describe('getId', () => {
         it("should return an id from getId()", () => {
-            const id = 5;
+            const id = 1;
             const obj = new Employee("Leela", id);
 
             expect(obj.getId()).toEqual(id);
@@ -51,7 +28,7 @@ describe('Employee', () => {
     describe('getEmail', () => {
         it("should return an id from getEmail()", () => {
             const email = "Leela@email.com";
-            const obj = new Employee("Leela", 5, email);
+            const obj = new Employee("Leela", 1, email);
 
             expect(obj.getEmail()).toEqual(email);
         });
