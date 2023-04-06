@@ -11,8 +11,8 @@
 4. [Questions](#questions)
 
 ## Technology Used
-1. 
-2. 
+1. inquirer
+2. jest
 
 ## Installations
 To install inquirer
@@ -23,6 +23,14 @@ node i inquirer@8.2.4.
 To install jest
 ```bash
 npm install --save-dev jest
+```
+To install coverage
+```bash
+npm run coverage
+```
+To install template helpers
+```bash 
+npm install --save template-helpers
 ```
 Application will be invoked using
 ```bash
